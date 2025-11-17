@@ -29,7 +29,7 @@ public class Rotate : MonoBehaviour
         {
             click = true;
             rotatedSoFar = 0f;
-            startZ = transform.eulerAngles.z; 
+            startZ = transform.eulerAngles.z;
         }
     }
 
@@ -37,7 +37,7 @@ public class Rotate : MonoBehaviour
     {
         if (!click)
         {
-           return;
+            return;
         }
         float delta = rotateSpeed * Time.deltaTime;
         rotatedSoFar += delta;
@@ -47,7 +47,8 @@ public class Rotate : MonoBehaviour
         float currentZ = startZ + angle;
         transform.rotation = Quaternion.Euler(0, 0, currentZ);
 
-        if (rotatedSoFar >= 360f){
+        if (rotatedSoFar >= 360f)
+        {
             transform.rotation = Quaternion.Euler(0, 0, startZ);
             click = false;
             rotatedSoFar = 0f;

@@ -5,8 +5,10 @@ public class tunnle : MonoBehaviour
     public Transform leftWrapPoint;
     public Transform rightWrapPoint;
     public float offset = 1.5f;
-    private void OnTriggerEnter2D(Collider2D other){ //function that call when trigger is activate
-        if (other.CompareTag("R_tunnel") || other.name == "R_tunnel"){ //check if R_tunnel triggerd
+    private void OnTriggerEnter2D(Collider2D other)
+    { //function that call when trigger is activate
+        if (other.CompareTag("R_tunnel") || other.name == "R_tunnel")
+        { //check if R_tunnel triggerd
             Vector3 pos = transform.position; //get position
             pos.x = leftWrapPoint.position.x + offset; //change the position to the left
             transform.position = pos; //update

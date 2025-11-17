@@ -4,7 +4,7 @@ using UnityEngine;
 [RequireComponent(typeof(TextMeshProUGUI))]
 public class numScore : MonoBehaviour
 {
-    public NumberField source;    
+    public NumberField source;
 
     private TextMeshProUGUI textField;
 
