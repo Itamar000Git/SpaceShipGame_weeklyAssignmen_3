@@ -15,7 +15,6 @@ public class TiltController : MonoBehaviour
         rotateAction.Enable();
         rotateAction.performed += OnTilt;
     }
-aaaaaa;
     private void OnDisable()
     {
         rotateAction.performed -= OnTilt;
