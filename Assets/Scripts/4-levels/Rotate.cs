@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class TiltController : MonoBehaviour
+public class Rotate : MonoBehaviour
 {
     [SerializeField] private InputAction rotateAction = new InputAction(type: InputActionType.Button);
     [SerializeField] private float rotateSpeed = 720f;
