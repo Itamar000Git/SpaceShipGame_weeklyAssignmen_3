@@ -25,7 +25,8 @@ public class Rotate : MonoBehaviour
         string key = ctx.control.displayName;
         Debug.Log("Pressed: " + key);
 
-        if (!click)   {
+        if (!click)
+        {
             click = true;
             rotatedSoFar = 0f;
             startZ = transform.eulerAngles.z; 
@@ -35,12 +36,13 @@ public class Rotate : MonoBehaviour
     private void Update()
     {
         if (!click)
-            return;
-
+        {
+           return;
+        }
         float delta = rotateSpeed * Time.deltaTime;
         rotatedSoFar += delta;
 
-        float angle = Mathf.Min(rotatedSoFar, 360f); //fix aoverrotate
+        float angle = Mathf.Min(rotatedSoFar, 360f);    //fix aoverrotate
 
         float currentZ = startZ + angle;
         transform.rotation = Quaternion.Euler(0, 0, currentZ);
