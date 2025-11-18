@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 public class GotoNextLevel : MonoBehaviour
 {
     [SerializeField] private string triggeringTag;
-    [SerializeField][Tooltip("Name of scene to move to when triggering the given tag")] private string sceneName;
+    [SerializeField] [Tooltip("Name of scene to move to when triggering the given tag")] private string sceneName;
 
     //[SerializeField] NumberField scoreField;
 
